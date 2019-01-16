@@ -1,0 +1,18 @@
+# Files
+.classpath
+.project
+.iml
+.DS_Store
+nb-configuration.xml
+nb-*
+profiles.xml
+.war
+modules/testcases/**/src/main/java/*.java
+modules/testcases/**/*.java
+
+
+#dirs
+modules/testcases/jdkAll/master/activemq/test-configurations/src
+target
+.idea
+.settings
