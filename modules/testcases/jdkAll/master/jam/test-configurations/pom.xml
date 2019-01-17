@@ -48,6 +48,7 @@
 		                <include>org/jam/metrics/**/*TestCase.java</include>
                                 <include>org/jam/metrics/**/*Test.java</include> 
 		            </includes> 
+                            <runOrder>alphabetical</runOrder>
 		        </configuration>
 		    </execution>
 		</executions>

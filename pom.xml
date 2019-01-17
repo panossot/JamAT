@@ -176,7 +176,7 @@
 		   <arguments>
 		       
                       <argument>${basedir}</argument>
-		       <argument>${basedir}/modules/src/test/java</argument>
+		       <argument>${basedir}/modules/src/main/java</argument>
                        <argument>${serverDir2}</argument>
                        <argument>${BRANCH_VERSION}</argument>
                        <argument>versionOrder</argument>
