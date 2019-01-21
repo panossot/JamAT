@@ -34,7 +34,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/master/jam/src/main/java"})
 public class ApplicationMetricsJavaSeApi2Test {
 
-    private static String groupName = "myTestGroup";
+    private String groupName = "myTestGroup";
     
     @Test
     public void test() {
@@ -49,7 +49,7 @@ public class ApplicationMetricsJavaSeApi2Test {
         }
     }
     
-    private static void initializeMetricProperties() {
+    private void initializeMetricProperties() {
         HashMap<String,String> rhqScheduleIds = new HashMap<String,String>();
         rhqScheduleIds.put("count", "11391");
         rhqScheduleIds.put("count2", "11392");
@@ -75,7 +75,7 @@ public class ApplicationMetricsJavaSeApi2Test {
         MetricsPropertiesApi.storeProperties(groupName, metricProperties);
     }
     
-    private static void createDbTable(Statement stmt) {
+    private void createDbTable(Statement stmt) {
         try {
             String query = "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'MyMETRICS' AND table_name = 'metricValues'";
             ResultSet rs = stmt.executeQuery(query);                  

@@ -29,7 +29,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/master/jam/src/main/java"})
 public class ApplicationMetricsJavaSeApi7Test {
 
-    private static String groupName = "myTestGroup";
+    private String groupName = "myTestGroup";
     
     @Test
     public void test() {
@@ -44,7 +44,7 @@ public class ApplicationMetricsJavaSeApi7Test {
         }
     }
 
-    private static void initializeMetricProperties() {
+    private void initializeMetricProperties() {
         MetricProperties metricProperties = new MetricProperties();
         metricProperties.setHawkularMonitoring("false");
         metricProperties.setCacheStore("true");

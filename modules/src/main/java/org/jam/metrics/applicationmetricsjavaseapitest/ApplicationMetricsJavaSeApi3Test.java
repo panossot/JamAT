@@ -33,7 +33,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/master/jam/src/main/java"})
 public class ApplicationMetricsJavaSeApi3Test {
 
-    private static String groupName = "myTestGroup";
+    private String groupName = "myTestGroup";
     
     @Test
     public void test() {
@@ -71,7 +71,7 @@ public class ApplicationMetricsJavaSeApi3Test {
         }
     }
     
-    private static void initializeMetricProperties() {
+    private void initializeMetricProperties() {
         HashMap<String,String> rhqScheduleIds = new HashMap<String,String>();
         rhqScheduleIds.put("count", "11391");
         rhqScheduleIds.put("count2", "11392");
